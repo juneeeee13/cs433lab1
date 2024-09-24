@@ -1,0 +1,17 @@
+QUESTION 1: Run the code 5 times? Is the sequence of the outputs the same?
+    Refer to beforemodification.png
+    The sequence of the outputs is not the same
+---------------------------
+QUESTION 2: Why the sequence of the outputs different?
+    The outputs are different because of process scheduling. One may run before the other.
+
+---------------------------
+QUESTION 3: If you want to insert a code(print command) to the above program so that both child and parents would execute.
+where would you insert it?
+    Inserting a print statement that both the child and parent would execute can work anywhere after the fork command.
+    Because the fork command has been run, the code in the lines after the command have been duplicated.
+    Therefore, the print statement we added would be in both the original program and the duplicated fork program.
+---------------------------
+QUESTION 4: Run the modified program.
+    Refer to aftermodification.png
+    We can see that the print statement is outputed twice, once for the original program and a second time for the forked program.
